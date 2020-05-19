@@ -1,0 +1,11 @@
+//Implementacion del metodo de clase Boleto
+void Boleto::resumendeCompra(){
+	
+			cout<<	"+--------------Boleto N"<<this->boleto<<"---------------------+\n";
+		  	cout<<  "|  Sala:"<< this->sala<<  "           		             |\n";
+		 	cout<<  "|  Hora:"<< this->pelicula.getHora() << "   		             |\n"; 
+		 	cout<<  "|  Asiento:" << this->fila<<this->columna << "                                |\n";
+		 	cout<<  "|  Pelicula:" << this->pelicula.getTitulo()<< "     	             |\n";
+		  	cout<<  "+--------------------------------------------+\n";
+
+}
