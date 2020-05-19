@@ -1,0 +1,59 @@
+//Constructor por defecto de la clase Sala
+Sala::Sala(){
+	
+	this->numero = 0;
+
+		// inicializando los asientos
+		for (int i = 0; i< 5; i++)
+		{
+			for (int j=0; j<5; j++)
+			{
+				this->asientos[i][j] = false;
+			}
+		}
+		
+
+			// inicializando las filas
+			this->filas[0] = 'A';
+			this->filas[1] = 'B';	
+			this->filas[2] = 'C';
+			this->filas[3] = 'D';
+			this->filas[4] = 'E';
+	
+			//inicializando las columnas
+			
+			this->columna[0]= '1';
+			this->columna[1]='2';
+			this->columna[2]= '3';
+			this->columna[3]= '4';
+			this->columna[4]= '5';
+}
+
+//Constructor de la clase Sala
+Sala::Sala(int numero,Boleto boletos):numero(numero){
+
+	this->numero = 0;
+	
+	// inicializando los asientos
+	for (int i = 0; i< 5; i++)
+	{
+		for (int j=0; j<5; j++)
+		{
+			this->asientos[i][j] = false;
+		}
+	}
+			// inicializando las filas
+			this->filas[0] = 'A';
+			this->filas[1] = 'B';	
+			this->filas[2] = 'C';
+			this->filas[3] = 'D';
+			this->filas[4] = 'E';
+	
+			//inicializando las columnas
+			this->columna[0]= '1';
+			this->columna[1]= '2';
+			this->columna[2]= '3';
+			this->columna[3]= '4';
+			this->columna[4]= '5';
+
+}
